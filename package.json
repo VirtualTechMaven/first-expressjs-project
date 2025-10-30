@@ -1,0 +1,23 @@
+{
+  "name": "first-expressjs-project",
+  "version": "1.0.0",
+  "description": "my first express.js task as a backend developer at engineers basecamp at engineers network",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --env-files=.env server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "first-expressjs-project"
+  },
+  "author": "Chioma Princess Ohwo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
