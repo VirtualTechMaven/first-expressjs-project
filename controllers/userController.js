@@ -22,6 +22,7 @@ export const getuserbyID = (req, res) => {
 
 // createanewuser
 export const createanewuser = (req, res) => {
+    try{
     const newUser = {
         id: users.length + 1,
         name: req.body.name,
@@ -30,6 +31,9 @@ export const createanewuser = (req, res) => {
     };
     users.push(newUser);
     res.status(201).json(newUser);
+    } catch (error) {
+        res.status(500).json({ message: 'Failed to create user' });
+    }
 };
 
 // updateauserbyID
